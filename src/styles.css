@@ -79,7 +79,9 @@ a {
     background-color: transparent;
     width: 153px;
     height: 42px;
+    padding: 9px 28px 11px 27px;
     border-radius: 10px;
+    color: #FFF;
     border: 2px solid #FFF;
     font-family: Inter;
     font-size: 18px;
@@ -88,15 +90,9 @@ a {
     line-height: normal;
 }
 
-.button a {
-    color: #FFF;
-}
-
-#learn-more-button:hover,
-button:focus {
+.button:hover, :focus {
     cursor: pointer;
     background-color: rgba(173, 216, 230, 0.5);
-    color: black;
 }
 
 #menu-button:hover {
@@ -129,7 +125,7 @@ a:focus {
 
 .box-image {
     width: 100%;
-    max-height: 352px;
+    height: 352px;
     border-radius: 4px;
 }
 
@@ -150,7 +146,7 @@ a:focus {
 }
 
 .box-read-more {
-    text-align: right;
+    align-self: flex-end;
     color: #D9852C;
     font-family: Inter;
     font-size: 15px;
@@ -159,12 +155,41 @@ a:focus {
 }
 
 /* Small devices (mobile/tablets) */
-@media screen and (min-width: 576px) and (max-width: 768px) {
-    /* CSS rules */
+@media screen and (min-width: 576px) {
+    #home-section {
+        max-width: 600px;
+    }
+
+    #title {
+        font-size: 3.89rem;
+    }
+
+    #newest-reads {
+        margin: 89px 0 56px 72px;
+        font-size: 1.78rem;
+    }
+
+    #news-page {
+        display: flex;
+        max-width: 627px;
+        margin: 0 auto;
+    }
+
+    .reads-box {
+        display: flex;
+        flex-direction: column;
+        width: 33.3%;
+        max-width: 187px;
+        margin: 0 10px;
+    }
+
+    .box-title {
+        font-size: 0.83rem;
+    }
 }
 
 /* Medium devices (tablets/laptops) */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
     /* CSS rules */
 }
 
