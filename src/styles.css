@@ -11,20 +11,6 @@ body {
 
 a {
     text-decoration: none;
-    color: #D9852C;
-}
-
-a:hover,
-a:focus {
-    cursor: pointer;
-}
-
-button:hover,
-button:focus {
-    cursor: pointer;
-    background-color: gainsboro;
-    color: black;
-    border: 2px solid black;
 }
 
 #home-page {
@@ -89,13 +75,12 @@ button:focus {
     line-height: 168.523%;
 }
 
-#learn-more-button {
+.button {
     background-color: transparent;
     width: 153px;
     height: 42px;
     border-radius: 10px;
     border: 2px solid #FFF;
-    color: #FFF;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -103,8 +88,25 @@ button:focus {
     line-height: normal;
 }
 
+.button a {
+    color: #FFF;
+}
+
+#learn-more-button:hover,
+button:focus {
+    cursor: pointer;
+    background-color: rgba(173, 216, 230, 0.5);
+    color: black;
+}
+
 #menu-button:hover {
     cursor: pointer;
+}
+
+#news-page a:hover,
+a:focus {
+    cursor: pointer;
+    color: #854D0E;
 }
 
 #newest-reads {
