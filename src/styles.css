@@ -14,10 +14,13 @@ a {
 }
 
 #home-page {
-    background: url(Banner\ image\ for\ art\ news\ page.jpg);
+    background:
+        rgba(0, 0, 0, 0.3)
+        url(Banner\ image\ for\ art\ news\ page.jpg);
     background-position: center;
     background-size: cover;
     background-blend-mode: darken;
+    /* background-color: rgba(0, 0, 0, 0.5); */
     width: 100%;
     height: 100vh;
 }
@@ -99,6 +102,30 @@ a {
 
 #menu-button:hover {
     cursor: pointer;
+}
+
+#navbar-laptop {
+    display: none;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    list-style-type: none;
+    margin-right: 27px;
+    gap: 35px;
+}
+
+#get-started-button {
+    margin-top: 32px;
+    padding: 9px 27px 11px 27px;
+}
+
+.navbar-titles {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 42px;
 }
 
 #news-page a:hover,
@@ -191,7 +218,7 @@ a:focus {
         flex-direction: column;
         width: 33.3%;
         max-width: 187px;
-        margin: 0 10px;
+        margin: 0 10px 32px 10px;
     }
 
     .box-title {
@@ -207,26 +234,6 @@ a:focus {
 
     #navbar-laptop {
         display: inline-flex;
-        flex-direction: row-reverse;
-        align-items: baseline;
-        list-style-type: none;
-        margin-right: 27px;
-        gap: 35px;
-    }
-
-    #get-started-button {
-        margin-top: 32px;
-        padding: 9px 27px 11px 27px;
-    }
-
-    .navbar-titles {
-        color: #FFF;
-        font-family: Inter;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        margin-top: 42px;
     }
 
     #home-section {
@@ -236,6 +243,35 @@ a:focus {
 
     #title {
         font-size: 4.44rem;
+    }
+
+    #newest-reads-wrapper {
+        max-width: 1296px;
+    }
+
+    #news-page {
+        max-width: 1322px;
+    }
+
+    .reads-box {
+        width: 33.3%;
+        max-width: 419px;
+    }
+
+    .box-image {
+        object-fit: cover;
+    }
+
+    #picasso-image {
+        object-position: center top;
+    }
+
+    #exterior-image {
+        object-position: center bottom;
+    }
+
+    .box-title {
+        font-size: 1.39rem;
     }
 }
 
